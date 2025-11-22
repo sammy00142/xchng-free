@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/__/auth",
+      "destination": "https://great-exchange.firebaseapp.com/__/auth"
+    }
+  ]
+}

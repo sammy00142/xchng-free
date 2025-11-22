@@ -1,0 +1,73 @@
+.header {
+  background: var(
+    --header-gradient,
+    linear-gradient(
+      92deg,
+      #ff4975 0%,
+      #ff0093 38.69%,
+      #ff32c6 71.32%,
+      #ffbc8c 87.45%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  height: 200dvh;
+  background-color: rgb(233, 207, 235);
+
+  animation: main_container linear;
+  animation-timeline: view();
+  animation-range: cover;
+
+  overflow-y: scroll;
+  scrollbar-width: 0;
+  scroll-snap-type: y proximity;
+}
+
+.first_container {
+  height: 100dvh;
+  border: 2px solid green;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.second_container {
+  height: 100dvh;
+  scroll-snap-align: center;
+  border: 2px solid rgb(0, 70, 128);
+}
+
+@keyframes main_container {
+  from {
+    background-color: rgb(243, 181, 247);
+  }
+  to {
+    background-color: rgb(216, 235, 207);
+  }
+}
+
+.money_wallet {
+  background-color: #ff0093;
+  width: fit-content;
+  animation: auto linear images_pos both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 50%;
+
+  position: absolute;
+}
+
+@keyframes images_pos {
+  from {
+    left: "520px";
+    top: "50px";
+    opacity: 0;
+  }
+  to {
+    left: "250px";
+    top: "293px";
+    opacity: 0;
+  }
+}

@@ -1,0 +1,1 @@
+ALTER TABLE "greatex_chat" ADD COLUMN "last_message_status" "message_status" DEFAULT 'SENT' NOT NULL;

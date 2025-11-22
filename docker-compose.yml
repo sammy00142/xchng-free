@@ -1,0 +1,19 @@
+services:
+  nextapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nextapp
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    volumes:
+      - .:/app
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

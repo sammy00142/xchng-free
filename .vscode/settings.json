@@ -1,0 +1,7 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "asterisk-da",
+    "projectKey": "Ableez_gtx"
+  }
+}
